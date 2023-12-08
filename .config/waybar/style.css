@@ -1,0 +1,31 @@
+* {
+    border: none;
+    border-radius: 0;
+    /*font-family: "Hack", "Noto Color Emoji", sans-serif;*/
+    font-family: "Hack";
+    font-size: 10px;
+    /*font-weight: bold;*/
+    min-height: 0;
+}
+
+window#waybar {
+    background: #eee8d5;
+    border-bottom: 1px solid #93a1a1;
+    color: #657b83;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    background: transparent;
+    color: #93a1a1;
+}
+
+#workspaces button.focused {
+    color: #586e75;
+}
+
+#mode, #clock, #battery, #custom-alsa, #network, #cpu, #memory, #disk, #temperature, #backlight {
+    padding: 0 5px;
+    border-left: 1px solid #93a1a1;
+}
+

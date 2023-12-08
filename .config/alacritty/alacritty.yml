@@ -1,0 +1,10 @@
+shell:
+  program: /usr/bin/zsh
+font:
+  size: 9.0
+import:
+  - ~/.config/alacritty/alacritty-theme/themes/solarized_light.yaml
+#mouse:
+  #hints:
+    #launcher:
+      #program: firefox
