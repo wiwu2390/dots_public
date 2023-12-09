@@ -1,4 +1,4 @@
-export TERM=xterm    # For colors in ssh??
+# export TERM=xterm    # For colors in ssh??
 export PATH="$HOME/.local/bin:$PATH"
 
 export LS_COLORS="ow=1;34"
