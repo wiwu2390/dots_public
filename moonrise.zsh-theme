@@ -16,7 +16,7 @@ RESET=$reset_color
 
 PROMPTPREFIX=$HOST
 
-local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
+local return_code="%(?..%{$R%}%? <%{$RESET%})"
 
 # Get the status of the working tree (copied and modified from git.zsh)
 custom_git_prompt_status() {
@@ -67,16 +67,16 @@ function custom_git_prompt() {
 }
 
 # %B sets bold text
-PROMPT='%{$G%}$PROMPTPREFIX %{$RESET%}%B%2~ $(custom_git_prompt)%{$M%}%B»%b%{$RESET%} '
+PROMPT='%{$G%}$PROMPTPREFIX %{$RESET%}%B%2~ $(custom_git_prompt)%{$M%}%B>%b%{$RESET%} '
 RPS1="${return_code}"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$Y%}‹"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$Y%}›%{$RESET%} "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$Y%}<"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$Y%}>%{$RESET%} "
 
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$R%}*"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-ZSH_THEME_GIT_PROMPT_AHEAD="%{$B%}➔"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$B%}>"
 
 
 ZSH_THEME_GIT_STATUS_PREFIX=" "
